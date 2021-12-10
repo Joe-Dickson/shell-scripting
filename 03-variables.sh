@@ -15,5 +15,6 @@ c=true    #Boolen
 
 ## Best practice is using flower braces.
 echo a = $a
-echo a in currency = $aUSD
+echo a in currency = ${a}USD
+
 
