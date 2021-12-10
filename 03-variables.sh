@@ -30,5 +30,10 @@ echo Good morning, Welcome, Today date is ${DATE}
 
 DATE=$(date +%F)
 echo Good morning, Welcome, Today is ${DATE}
+
 ADD=$((2+3))
 echo ADD = ${ADD}
+
+## variable from Shell command line
+echo USER = ${USER}
+echo A = ${A}
