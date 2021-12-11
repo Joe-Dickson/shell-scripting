@@ -57,7 +57,7 @@ read -p 'Enter your age:' age
 if [ -z "$age"]; then
   echo Input Missing
   exit
-fi
+  fi
 
 if [ ! -z "${age}" -a "${age}" -lt 18 ]; then
   echo You are a Minor
@@ -75,3 +75,4 @@ fi
 # [ expressions1 -a expressions2 ] -> True if both are true
 # LOGICAL OR -o
 # [ expressions1 -a expressions2 ] -> True if any expression is true
+
