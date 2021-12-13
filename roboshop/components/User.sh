@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo User Setup
+echo User Setup complete
+
 
 
