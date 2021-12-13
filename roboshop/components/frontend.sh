@@ -31,7 +31,7 @@ if [ $? -ne 0 ]; then
 fi
 curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 if [ $? -ne 0 ]; then
-  echo "Nginx Install Failed"
+  echo "Download Frontend Failed"
   exit
 fi
 cd /usr/share/nginx/html
