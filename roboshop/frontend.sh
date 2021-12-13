@@ -22,4 +22,10 @@
 
 ## Check whether the script is running as a root user or not
 
+USER_UID=$(id-u)
+if [ 4{USER_ID} -ne 0 ]; then
+  echo -e "\e[1;31mYou should be a root user to perform this script\0m"
+  exit
+fi
+
 yum install nginx -y
