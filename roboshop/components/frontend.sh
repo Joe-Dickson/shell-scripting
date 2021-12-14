@@ -20,7 +20,8 @@
 # systemctl restart nginx
 
 
-## Check whether the script is running as a root user or not
+LOG_FILE=/tmp/roboshop.log
+rm -f ${LOG_FILE}
 
 STAT_CHECK() {
   if [ $1 -ne 0 ]; then
@@ -31,7 +32,7 @@ STAT_CHECK() {
   fi
 }
 
-yum install nginx -y
+yum install nginx -y >>${LOG_FILE}
 STAT_CHECK $? "Nginx Installation"
 
 
