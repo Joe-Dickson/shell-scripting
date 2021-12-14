@@ -22,18 +22,19 @@
 
 ## Check whether the script is running as a root user or not
 
+STAT_CHECK() {
+  if [ $1 -ne 0 ]; then
+  echo "$2"
+  exit 1
+  fi
+}
 
 yum install nginx -y
-if [ $? -ne 0 ]; then
-  echo "Nginx Install Failed"
-  exit 1
-fi
+STAT_CHECK $? "Nginx Installation Failed"
+
 
 curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
-if [ $? -ne 0 ]; then
-  echo "Download Frontend Failed"
-  exit 1
-fi
+STAT_CHECK $? "Download frontend failed"
 
 cd /usr/share/nginx/html
 rm -rf *
