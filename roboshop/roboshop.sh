@@ -16,6 +16,6 @@ if [ ! -e components/${COMPONENT}.sh ]; then
   echo -e "\e[1;31mGiven component script does not exists\e[0m"
   exit
 fi
-bash components/${COMPONENTS}.sh
+bash components/${COMPONENT}.sh
 
 
