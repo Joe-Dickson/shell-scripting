@@ -26,4 +26,10 @@ sample1
 # 3. Alias
 # 4. Functions
 
+## Functions have it's own special variables
+sample2() {
+  echo First Argument = $1
+  echo Number of Arguments = $#
+}
 
+sample2 123 xyz
