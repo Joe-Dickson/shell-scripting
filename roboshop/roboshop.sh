@@ -12,10 +12,10 @@ if [ -z "$COMPONENT" ]; then
   exit
 fi
 
-if [ ! -e COMPONENTS/${COMPONENT}.sh ]; then
+if [ ! -e components/${COMPONENT}.sh ]; then
   echo -e "\e[1;31mGiven component script does not exists\e[0m"
   exit
 fi
-bash components/${COMPONENT}.sh
+bash components/${COMPONENTS}.sh
 
 
