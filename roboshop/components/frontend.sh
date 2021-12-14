@@ -36,7 +36,7 @@ if [ $? -ne 0 ]; then
 fi
 cd /usr/share/nginx/html
 rm -rf *
-nzip /tmp/frontend.zip
+unzip /tmp/frontend.zip
 mv frontend-main/* .
 mv static/* .
 rm -rf frontend-master static README.md
