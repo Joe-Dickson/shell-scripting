@@ -8,14 +8,15 @@ fi
 
 COMPONENT=$1
 if [ -z "$COMPONENT" ]; then
-  echo -e "\e[1;31mmCOMPONENT Input Missing\e[0m"
+  echo -e "\e[1;31mCOMPONENT Input Missing\e[0m"
   exit
 fi
 
 if [ ! -e components/${COMPONENT}.sh ]; then
-  echo -e "\e[1;31mGiven component script does not exists\e[0m"
+  echo -e "\e[1;31mmGiven component script does not exists\e[0m"
   exit
 fi
+
 bash components/${COMPONENT}.sh
 
 
