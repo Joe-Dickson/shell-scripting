@@ -34,6 +34,7 @@ if [ $? -ne 0 ]; then
   echo "Download Frontend Failed"
   exit 1
 fi
+
 cd /usr/share/nginx/html
 rm -rf *
 unzip /tmp/frontend.zip
