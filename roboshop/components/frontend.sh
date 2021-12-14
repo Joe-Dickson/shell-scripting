@@ -23,7 +23,6 @@
 ## Check whether the script is running as a root user or not
 
 
-echo Frontend Setup
 yum install nginx -y
 if [ $? -ne 0 ]; then
   echo "Nginx Install Failed"
