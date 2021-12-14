@@ -8,7 +8,7 @@ fi
 
 COMPONENT=$1
 if [ -z "$COMPONENT" ]; then
-  echo -e "\e[1;31mCOMPONENT Input Missing\e[0m"
+  echo -e "\e[1;31mmCOMPONENT Input Missing\e[0m"
   exit
 fi
 
