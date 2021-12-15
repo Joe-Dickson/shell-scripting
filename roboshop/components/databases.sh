@@ -26,7 +26,7 @@ source components/common.sh
 # mongo < users.js
 
 
-curl -s -o /etc/yum.repos.d/mongodb.repo "https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo" &>>${LOG_FILE}
+curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo &>>${LOG_FILE}
 STAT_CHECK $? "Download MongoDB repo"
 
 
