@@ -3,7 +3,7 @@
 # source is nothing but import , like export command
 source components/common.sh
 
-yum install nginx -y >>${LOG_FILE}
+yum install nginx -y &>>${LOG_FILE}
 STAT_CHECK $? "Nginx Installation"
 
 curl -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>${LOG_FILE}
