@@ -1,5 +1,5 @@
 #!/bin/bash
-
+LOG_FILE=/tmp/roboshop.log
 source components/common.sh
 #
 #Setup MongoDB repos.
