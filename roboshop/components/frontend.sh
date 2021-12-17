@@ -1,5 +1,5 @@
 #!/bin/bash
-
+LOG_FILE=/tmp/roboshop.log
 # source is nothing but import , like export command
 source components/common.sh
 
